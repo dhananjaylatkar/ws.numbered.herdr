@@ -1,0 +1,27 @@
+id = "ws.numbered.hr.dhananjay"
+name = "Numbered Workspaces"
+version = "0.1.0"
+min_herdr_version = "0.9.3"
+description = "Number workspace and panes automatically"
+platforms = ["linux", "macos", "windows"]
+
+[[events]]
+on = "workspace.created"
+command = ["python3", "numbered.py"]
+
+[[events]]
+on = "workspace.renamed"
+command = ["python3", "numbered.py"]
+
+[[events]]
+on = "workspace.moved"
+command = ["python3", "numbered.py"]
+
+[[events]]
+on = "workspace.reordered"
+command = ["python3", "numbered.py"]
+
+[[events]]
+on = "workspace.closed"
+command = ["python3", "numbered.py"]
+
